@@ -2,16 +2,16 @@ import React from 'react';
 import {Navbar,Container} from 'react-bootstrap';
 
 const navbarStyles={
-    backgroundColor:'light',
+    backgroundColor:'lightgreen',
 }
 
 const Header = ({title}) => {
     return (
-        <Container>
-            <Navbar style={navbarStyles} variant='light'>
+        <Navbar style={navbarStyles} variant='light'>
+            <Container>
                 <Navbar.Brand href='/'>{title}</Navbar.Brand>
-            </Navbar>
-        </Container>
+            </Container>
+        </Navbar>
     )
 };
 
