@@ -16,6 +16,7 @@ const Search = ({api_clientid}) => {
             .catch((error)=>{
                 console.log(error)
             });
+            setTerm('');
     }
     
     return (
