@@ -1,14 +1,22 @@
 import React, { useState } from 'react';
 import { Container, Form, Row, Col, Button } from 'react-bootstrap';
 
-const handleSubmit= (e)=> {
-    e.preventDefault();
-    console.log(e.target.searchInput.value);
-}
 
-const Search = () => {
+const Search = ({api_clientid}) => {
 
     const [term,setTerm] = useState('');
+    
+    const handleSubmit= (e)=> {
+        e.preventDefault();
+        fetch(`https://api.boardgameatlas.com/api/search?client_id=${api_clientid}&name=${term}`)
+            .then((response)=>response.json())
+            .then((data)=>{
+                console.log(data)
+            })
+            .catch((error)=>{
+                console.log(error)
+            });
+    }
     
     return (
         <Container className='mt-4'>
