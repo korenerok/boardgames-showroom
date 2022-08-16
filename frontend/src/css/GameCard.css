@@ -1,0 +1,31 @@
+
+.cardImageDiv{
+    height:18rem;
+    width: 90%;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.cardImageDiv img{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+}
+
+.cardTextDiv{
+    height:12rem;
+}
+
+.cardTitleDiv{
+    height:4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.GameCard{
+    margin: auto;
+}

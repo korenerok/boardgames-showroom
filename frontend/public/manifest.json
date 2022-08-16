@@ -1,6 +1,6 @@
 {
-  "short_name": "Image gallery",
-  "name": "Image gallery",
+  "short_name": "Boardgames showroom",
+  "name": "Boardgames showroom",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,9 +8,9 @@
       "type": "image/x-icon"
     },
     {
-      "src": "icon_128.png",
+      "src": "icon_192.png",
       "type": "image/png",
-      "sizes": "128x128"
+      "sizes": "192x192"
     },
     {
       "src": "icon_512.png",
